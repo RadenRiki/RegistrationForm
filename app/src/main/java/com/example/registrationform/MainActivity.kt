@@ -107,7 +107,7 @@ fun RegistrationPage(modifier: Modifier = Modifier) {
                 modifier = Modifier.padding(top = 60.dp, bottom = 20.dp)
             )
 
-            // First & Last Name (one row)
+            // First Last Name
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.spacedBy(12.dp)
@@ -138,7 +138,7 @@ fun RegistrationPage(modifier: Modifier = Modifier) {
 
             Spacer(Modifier.height(12.dp))
 
-            // Password (hidden)
+            // Password
             OutlinedTextField(
                 value = password,
                 onValueChange = { password = it },
@@ -172,7 +172,7 @@ fun RegistrationPage(modifier: Modifier = Modifier) {
                 )
             }
 
-            // Buttons: Clear & Submit
+            // Buttons
             Row(
                 modifier = Modifier
                     .padding(top = 20.dp)
@@ -182,7 +182,7 @@ fun RegistrationPage(modifier: Modifier = Modifier) {
             ) {
                 Button(
                     onClick = {
-                        // reset semua field
+                        // reset
                         firstName = ""
                         lastName = ""
                         username = ""
